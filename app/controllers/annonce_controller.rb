@@ -1,7 +1,10 @@
 class AnnonceController < ApplicationController
-  def index
+  def new
+  	@annonce = Annonce.new
   end
 
   def show
+  	"<h1>%= annonce.titre%</h1>"
+  	"<p>%= annonce.description%</p>"
   end
 end
