@@ -1,5 +1,25 @@
 .row
-  .col-md-12
-    .page-header
-      %h1
-        Le bon coiin
+	%nav{class: "navbar navbar-inverse navbar-fixed-top", role: "navigation"}
+		%div{class: "container"}
+			.col-sm-4
+			.col-sm-2
+				%b
+					Inscrivez vous :
+			.col-sm-3
+				%label 
+				%h10
+					Votre pseudo :
+					%input{type: "text", name: "pseudo", id: "pseudo", require: "true"}
+			.col-sm-3			
+				%label
+				%h10
+					votre mot de passe :
+					%input{type: "password",name: "pass",id: "pass",require: "true"} 
+						
+	.col-md-12
+		.page-header
+			#content
+				%center
+					%h1
+						%br
+						Le Bon Coiin
