@@ -1,5 +1,14 @@
 # README
 
+Il faut créer l'utilisateur admin avec le mot de passe admin avec postgresql
+
+    cd /your/app/path
+    bundle install
+    bundle exec rake db:create
+    bundle exec rake db:migrate
+    bundle exec rails server
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
