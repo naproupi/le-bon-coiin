@@ -1,5 +1,22 @@
 .row
-  .col-md-12
-    .page-header
-      %h1
-        Le bon coiin
+    .col-md-12
+        .page-header
+            %h1
+                %center
+                    Le bon coiin
+.row
+    .col-md-8
+        %li
+            %a{ href: 'annonce#create', title: 'Créer une annonce'}
+                %strong
+                    Créer une nouvelle annonce
+.row
+    .col-md-12
+        - @annonces.each do |an|
+            %h3
+                = an.titre
+            %p
+                = an.description
+            %li
+                %a{ href: "/annonces/#{an.id}"}
+                    Voir l'annonce

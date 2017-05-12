@@ -7,6 +7,7 @@ end
 
 
 gem 'haml'
+gem 'will_paginate'
 gem 'erubis'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.0'

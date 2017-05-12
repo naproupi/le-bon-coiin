@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+annonces = Annonce.create([{titre: "Vend sextoy de qualité", description: "Pour les petites coquines, ou les gros coquins", prix: "10.0", photo: "A régler"}])
