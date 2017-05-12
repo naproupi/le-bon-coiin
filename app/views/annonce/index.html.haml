@@ -1,21 +1,20 @@
 .row
 	%nav{class: "navbar navbar-inverse navbar-fixed-top", role: "navigation"}
 		%div{class: "container"}
-			.col-sm-4
-			.col-sm-2
-				%b
-					Inscrivez vous :
-			.col-sm-3
-				%label 
-				%h10
-					Votre pseudo :
-					%input{type: "text", name: "pseudo", id: "pseudo", require: "true"}
-			.col-sm-3			
-				%label
-				%h10
-					votre mot de passe :
-					%input{type: "password",name: "pass",id: "pass",require: "true"} 
-						
+			%titreBlanc
+				.col-sm-4
+				.col-sm-2
+					%b
+						Inscrivez vous :
+				.col-sm-3
+					%label 
+						Votre pseudo :
+						%input{type: "text", name: "pseudo", id: "pseudo", require: "true"}
+				.col-sm-3			
+					%label
+						votre mot de passe :
+						%input{type: "password",name: "pass",id: "pass",require: "true"} 
+								
 	.col-md-12
 		.page-header
 			#content
@@ -24,18 +23,18 @@
 						%br
 						Le Bon Coiin
 .row
-    .col-md-8
-        %li
-            %a{ href: 'annonce#create', title: 'Créer une annonce'}
-                %strong
-                    Créer une nouvelle annonce
+	.col-md-8
+		%li
+			%a{ href: 'annonce#create', title: 'Créer une annonce'}
+				%strong
+					Créer une nouvelle annonce
 .row
-    .col-md-12
-        - @annonces.each do |an|
-            %h3
-                = an.titre
-            %p
-                = an.description
-            %li
-                %a{ href: "/annonces/#{an.id}"}
-                    Voir l'annonce
+	.col-md-12
+		- @annonces.each do |an|
+			%h3
+				= an.titre
+			%p
+				= an.description
+			%li
+				%a{ href: "/annonces/#{an.id}"}
+					Voir l'annonce
