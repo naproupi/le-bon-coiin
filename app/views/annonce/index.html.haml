@@ -25,9 +25,7 @@
 .row
 	.col-md-8
 		%li
-			%a{ href: 'annonce#create', title: 'Créer une annonce'}
-				%strong
-					Créer une nouvelle annonce
+			= link_to "Créer une nouvelle annonce", new_annonce_path
 .row
 	.col-md-12
 		- @annonces.each do |an|
@@ -36,5 +34,4 @@
 			%p
 				= an.description
 			%li
-				%a{ href: "/annonces/#{an.id}"}
-					Voir l'annonce
+				= link_to 'Show', an
